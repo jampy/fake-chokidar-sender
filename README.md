@@ -29,8 +29,17 @@ This will forward all Chokidar events for the current directory (and all
 directories below) via UDP to the guest. Events for file `./foo/bar.txt` will be
 seen by the guest as `/my-source/foo/bar.txt`.
 
+
 ## Options
 
 Please run `fake-chokidar-sender --help`.
 
 
+## Create your own binary
+
+Just download the source and run
+
+```
+npm install
+npm run package-win64
+```
