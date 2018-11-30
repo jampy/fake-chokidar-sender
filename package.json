@@ -1,7 +1,7 @@
 {
   "name": "fake-chokidar-sender",
   "version": "0.0.1",
-  "description": "event sender for face-chokidar",
+  "description": "event sender for fake-chokidar",
   "main": "index.js",
   "dependencies": {
     "chokidar": "^2.0.4"
