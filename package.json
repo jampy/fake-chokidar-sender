@@ -1,0 +1,29 @@
+{
+  "name": "fake-chokidar-sender",
+  "version": "0.0.1",
+  "description": "event sender for face-chokidar",
+  "main": "index.js",
+  "dependencies": {
+    "chokidar": "^2.0.4"
+  },
+  "devDependencies": {
+    "pkg": "^4.3.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package-win64": "pkg -t node8-win-x64 -o binaries/fake-chokidar-sender.exe index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jampy/fake-chokidar-sender.git"
+  },
+  "keywords": [
+    "fake-chokidar"
+  ],
+  "author": "Udo Giacomozzi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jampy/fake-chokidar-sender/issues"
+  },
+  "homepage": "https://github.com/jampy/fake-chokidar-sender#readme"
+}
