@@ -1,6 +1,6 @@
 {
   "name": "fake-chokidar-sender",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "event sender for fake-chokidar",
   "main": "index.js",
   "dependencies": {
