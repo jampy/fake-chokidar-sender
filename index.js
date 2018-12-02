@@ -38,7 +38,7 @@ function monitor(localPath, sharePath, ignored) {
 
 function sendMessage(payload) {
 
-  const msg = new Buffer(JSON.stringify(payload));
+  const msg = Buffer.from(JSON.stringify(payload));
 
   netClient.send(msg, 0, msg.length, port, host, function(err, bytes) {
     if (err)
