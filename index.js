@@ -53,7 +53,7 @@ function sendMessage(payload) {
 function showUsageAndExit() {
 
   console.log("Usage:");
-  console.log("  " , process.argv[1], "[option]... local-dir:remote-dir ...");
+  console.log("  " , process.argv[1], "[option]... local-dir,remote-dir ...");
   console.log("");
   console.log("Options:");
   console.log("  --host <host>     Send UDP messages to <host> (default: 127.0.0.1)");
@@ -127,7 +127,7 @@ function parseCommandLine() {
 
   while (args.length) {
 
-    let parts = args.shift().split(":");
+    let parts = args.shift().split(",");
 
     if (parts.length !== 2)
       showUsageAndExit();
