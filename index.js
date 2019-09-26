@@ -17,6 +17,7 @@ function monitor(localPath, sharePath, ignored) {
   const handle = chokidar.watch(localPath, {
     ignoreInitial: true,
     ignored,
+    ignorePermissionErrors: true,
   });
 
   handle.on("all", (event, path) => {
